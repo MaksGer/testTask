@@ -1,13 +1,26 @@
-.subheader-container {
-    border-top: 1px solid #EAEAEA;
+.subheader-wrapper {
+    position: relative;
+    margin: 20px 54px 0;
+}
+
+.subheader-borders {
     border-bottom: 1px solid #EAEAEA;
-    padding: 11px;
+    border-top: 1px solid #EAEAEA;
+}
+
+.subheader-container {
+    display: flex;
     padding-bottom: 13px;
-    margin: 0 54px;
+    padding-top: 11px;
+
+}
+.filters-popup-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .subtitle-input {
-    width: 455px;
     height: 40px;
     position: relative;
 }
@@ -41,7 +54,6 @@ input::placeholder {
     width: 109px;
     height: 40px;
     color: white;
-    margin-left: 11px;
     border: none;
     outline: none;
 }
@@ -51,8 +63,7 @@ input::placeholder {
 }
 
 .subtitle-categories {
-    display: flex;
-    /*flex-direction: row;*/
+    align-items: center;
     margin-left: auto;
 }
 .active-item-color {
@@ -68,4 +79,66 @@ input::placeholder {
     font-size: 16px;
     line-height: 19px;
     margin-left: 27px;
+}
+
+.filters-container {
+    position: relative;
+    flex-direction: column;
+}
+
+.filters-list-container {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    padding: 26px 25px;
+    min-height: 283px;
+    background-color: white;
+    z-index: 7;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 4px
+}
+
+.filters-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.filters-list-item {
+    text-transform: capitalize;
+    display: inline-flex;
+    padding: 15px 18px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #081531;
+    margin: 12px 10px;
+}
+
+.filters-list-item-icon {
+    margin-right: 5px;
+}
+
+.filters-list-title {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.03em;
+    color: #081531;
+    margin-bottom: 18px;
+}
+
+.filters-submit-button {
+    margin-top: auto;
+    margin-left: auto;
+
+}
+
+.filters-list-item-label {
+    color: #4640DE;
+    margin-left: 20px;
+}
+
+.filters-mobile-list-row {
+    display: flex;
 }

@@ -2,6 +2,7 @@
     font-size: 22px;
     line-height: 26px;
     color: #081531;
+    margin-bottom: 10px;
 }
 
 .card-info {
@@ -14,12 +15,21 @@
     padding: 32px 25px 21px;
 }
 
+.img-container {
+    display: flex;
+}
+
 .location-block {
     display: flex;
+    margin-bottom: 28px;
+    margin-top: 30px;
 }
 
 .location-info {
     margin-left: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .location-name {
@@ -32,4 +42,36 @@
     font-size: 13px;
     line-height: 16px;
     color: #969696;
+}
+
+.money-details-value {
+    font-weight: bold;
+    font-size: 26px;
+    color: #081531;
+    line-height: 36px;
+}
+
+.money-details-title {
+    font-weight: 500;
+    font-size: 14px;
+    color: #969696;
+    line-height: 19px;
+    text-align: center;
+}
+
+.money-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.money-details-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-card {
+    margin-top: auto;
 }
